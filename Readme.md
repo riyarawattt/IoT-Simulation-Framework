@@ -1,20 +1,34 @@
-# Emulation of Internet of Things(IoT) Using Software Processes
+# Emulation of Internet of Things (IoT) Using Software Processes
 
-The project imitates a simple Internet of Things (IoT) system. It uses various software processes that communicate with each other to simulate the basic behavior of IoT devices and systems. This system consists of multiple processes (controller, actuator, cloud, and sensor) that interact via Inter-Process Communication (IPC) mechanisms such as message queues and FIFOs. The goal of this project is to demonstrate how different IoT components (controller, actuator, cloud, and sensor devices) can communicate and function together.
+This project simulates a basic Internet of Things (IoT) system using software processes that communicate with each other. It consists of multiple components—**controller, actuator, cloud, and sensor**—which interact via **Inter-Process Communication (IPC)** mechanisms such as message queues and FIFOs.
+
+The objective is to demonstrate how different IoT components work together in a system, mimicking real-world IoT device interactions.
 
 ## How to Run the Program
 
-#### Run the Shell Script found in this directory:
+1. **Run the Shell Script**
 
-<code>./run_script.sh</code>
+   Execute the provided script to compile and set up the processes:
 
-Run the software processes given below in individual terminals:
-Make sure that the c files run in the following order:
+   
+sh
+   ./run_script.sh
 
-<code>./controller</code>
-<code>./actuator</code>
-<code>./cloud</code>
-<code>./sensor <deviceType\> <thresholdValue\> <code>
-<code>./sensor <deviceType\> <thresholdValue\> <code>
 
-The code will be compiled using the script file provided.
+2. **Start the Software Processes**
+
+   Run each process in a separate terminal in the following order:
+
+   
+sh
+   ./controller
+   ./actuator
+   ./cloud
+   ./sensor <deviceType> <thresholdValue>
+   ./sensor <deviceType> <thresholdValue>
+
+
+   The sensor process can be executed multiple times with different parameters to simulate multiple IoT sensors.
+
+This setup ensures proper communication between all components in the system.
+ 
