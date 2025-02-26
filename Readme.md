@@ -4,7 +4,7 @@ The project imitates a simple Internet of Things (IoT) system. It uses various s
 
 ## How to Run the Program
 
-### Run the Shell Script found in this directory:
+#### Run the Shell Script found in this directory:
 
 <code>./run_script.sh</code>
 
