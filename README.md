@@ -11,20 +11,30 @@ The objective is to demonstrate how different IoT components work together in a 
    Execute the provided script to compile and set up the processes:
 
    
-   sh
+   ```
    ./run_script.sh
+   ```
 
 
 2. **Start the Software Processes**
 
    Run each process in a separate terminal in the following order:
 
-   sh
+   ```
    ./controller
+   ```
+   ```
    ./actuator
+   ```
+   ```
    ./cloud
+   ```
+   ```
    ./sensor <deviceType> <thresholdValue>
+   ```
+   ```
    ./sensor <deviceType> <thresholdValue>
+   ```
 
 
    The sensor process can be executed multiple times with different parameters to simulate multiple IoT sensors.
